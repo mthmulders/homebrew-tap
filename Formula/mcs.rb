@@ -1,12 +1,12 @@
 class Mcs < Formula
   desc "Maven Central Search"
   homepage "https://github.com/mthmulders/mcs"
-  version "0.1.9"
+  version "0.1.10"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/mthmulders/mcs/releases/download/v0.1.9/mcs-0.1.9-osx-x86_64.zip"
-    sha256 "afdb7f7c6be2e7363e5fc4086eed9405a30e90f8b7ef6c53abac506471a8026a"
+    url "https://github.com/mthmulders/mcs/releases/download/v0.1.10/mcs-0.1.10-osx-x86_64.zip"
+    sha256 "af130a475a6a8c8b7478ae0ef8d7784a3a0c3952fabcf2aff5d73be0337f9003"
   end
 
 
@@ -17,6 +17,6 @@ class Mcs < Formula
 
   test do
     output = shell_output("#{bin}/mcs --version")
-    assert_match "0.1.9", output
+    assert_match "0.1.10", output
   end
 end
