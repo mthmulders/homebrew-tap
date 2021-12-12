@@ -6,7 +6,7 @@ class Mcs < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/mthmulders/mcs/releases/download/v0.1.14/mcs-0.1.14-osx-x86_64.zip"
-    sha256 "824494a3a6890f4b0460ba72481ff574eabff206183ad933c8db3496076d3a79"
+    sha256 "b2009b2c3e779ff54af564696023c329a4fbdd961c77e647ee226d889faeabac"
   end
 
 
