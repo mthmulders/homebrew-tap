@@ -1,17 +1,17 @@
-# Generated with JReleaser 0.10.0 at 2021-12-29T16:24:31.647081558Z
+# Generated with JReleaser 0.10.0 at 2022-02-20T12:19:48.835094445Z
 class Mcs < Formula
   desc "Maven Central Search"
-  homepage "https://github.com/mthmulders/mcs"
-  version "0.1.18"
+  homepage "https://github.com/mthmulders/mcs/"
+  version "0.2"
   license "MIT"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/mthmulders/mcs/releases/download/v0.1.18/mcs-0.1.18-linux-x86_64.zip"
-    sha256 "0b1569140555c532a0eefe0f62d8c45d881b223dcc6933bc251d887b12e8a2e4"
+    url "https://github.com/mthmulders/mcs/releases/download/v0.2/mcs-0.2-linux-x86_64.zip"
+    sha256 "201a5afe15825b68c0a20fc88a9c134162dcf70f3fdca9f02e2f72e027818684"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/mthmulders/mcs/releases/download/v0.1.18/mcs-0.1.18-osx-x86_64.zip"
-    sha256 "7f8506be4d5ef57c977de4dff935f7d0be2c668ff48d20cc94ac71c73d7acb57"
+    url "https://github.com/mthmulders/mcs/releases/download/v0.2/mcs-0.2-osx-x86_64.zip"
+    sha256 "ce379a448befc66df1478cec8621aa73be8375e12dcd40825400f6661fda3e7f"
   end
 
 
@@ -22,6 +22,6 @@ class Mcs < Formula
 
   test do
     output = shell_output("#{bin}/mcs --version")
-    assert_match "0.1.18", output
+    assert_match "0.2", output
   end
 end
