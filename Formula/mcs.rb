@@ -1,22 +1,22 @@
-# Generated with JReleaser 1.18.0 at 2025-06-18T07:35:36.115831196Z
+# Generated with JReleaser 1.19.0 at 2025-07-18T14:05:43.236567276Z
 
 class Mcs < Formula
   desc "Maven Central Search"
   homepage "https://maarten.mulders.it/projects/mcs/"
-  version "0.7.5"
+  version "0.7.6"
   license "MIT"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/mthmulders/mcs/releases/download/v0.7.5/mcs-0.7.5-linux-x86_64.zip"
-    sha256 "4924bcff0cb71c5507157e8ed3508a9c70803b87640f436634a50740302c88c3"
+    url "https://github.com/mthmulders/mcs/releases/download/v0.7.6/mcs-0.7.6-linux-x86_64.zip"
+    sha256 "04040b5794b2416dd337ccb1f52d02aa14f04bb0e7204dd16ba91becb586de9c"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/mthmulders/mcs/releases/download/v0.7.5/mcs-0.7.5-osx-aarch_64.zip"
-    sha256 "dda05e5e6c13c3a5407c7c199e41e53ecc601e5e5cb27a0d31e8785327585b94"
+    url "https://github.com/mthmulders/mcs/releases/download/v0.7.6/mcs-0.7.6-osx-aarch_64.zip"
+    sha256 "25c5cce3acbd91fa33174dd3dadd6f5355e6787d728784e27a3885d846d3abde"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/mthmulders/mcs/releases/download/v0.7.5/mcs-0.7.5-osx-x86_64.zip"
-    sha256 "027788d725c8ebb881376039d61b8ff1dcb9d105d9f2f94c9802e0f1e3df5de9"
+    url "https://github.com/mthmulders/mcs/releases/download/v0.7.6/mcs-0.7.6-osx-x86_64.zip"
+    sha256 "5a967466e9407cbc588730e635b335cedf35736497630873d8a9f3982aa36865"
   end
 
 
@@ -27,6 +27,6 @@ class Mcs < Formula
 
   test do
     output = shell_output("#{bin}/mcs --version")
-    assert_match "0.7.5", output
+    assert_match "0.7.6", output
   end
 end
