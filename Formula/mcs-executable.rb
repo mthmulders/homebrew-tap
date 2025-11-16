@@ -1,4 +1,4 @@
-# Generated with JReleaser 1.20.0 at 2025-11-16T14:20:01.564033+01:00
+# Generated with JReleaser 1.20.0 at 2025-11-16T14:25:54.453327+01:00
 
 class McsExecutable < Formula
   desc "Maven Central Search"
